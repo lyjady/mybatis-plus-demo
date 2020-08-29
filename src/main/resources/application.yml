@@ -1,0 +1,18 @@
+server:
+  port: 8111
+spring:
+  application:
+    name: mybatis-plus-demo
+  datasource:
+    url: jdbc:mysql://192.168.0.109:3306/mybatis-plus?time_zone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+logging:
+  level:
+    org.augustus.plus.mapper: debug
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1     # 1为逻辑删除
+      logic-not-delete-value: 0 # 0为逻辑上的未删除
